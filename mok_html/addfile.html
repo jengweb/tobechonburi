@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" media="screen" href="css/style_admin.css"/>
+<link rel="stylesheet" href="css/layerslider.css" type="text/css">
+<title>โครงการ TO BE NUMBER ONE จังหวัดชลบุรี</title>
+<meta NAME="description" CONTENT="เว็บไซต์ของโครงการ TO BE NUMBER ONE จังหวัดชลบุรี ศูนย์ประสานงานโครงการ TO BE NUMBER ONE จังหวัดชลบุรี">
+<meta name="keywords" content="TO BE NUMBER ONE, ชลบุรี, ยาเสพติด, งานส่งเสริมสุขภาพ, ศูนย์ประสานงานโครงการTO BE NUMBER ONE, แก้ไขปัญหา, บำบัด, ทูบีนัมเบอร์วัน">
+<META NAME="robots" CONTENT="index, follow">
+<META NAME="GOOGLEBOT" CONTENT="INDEX, FOLLOW">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">โครงการรณรงค์ป้องกันและแก้ปไขปัญหายาเสพติด จังหวัดชลบุรี</a></h1>
+  <h2>TO BE NUMBER ONE Chonburi</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="#" class="menu1">หน้าแรก</a></li>
+    <li><a href="#" class="menu2 active">บริการข้อมูล</a></li>
+    <li><a href="#" class="menu3">ข่าวประชาสัมพันธ์</a></li>
+    <li><a href="#" class="menu4">ระบบจัดการเอกสาร</a></li>
+    <li><a href="#" class="menu5">ปฏิทินกิจกรรม</a></li>
+    <li><a href="#" class="menu6">ติดต่อหน่วยงาน</a></li>
+  </ul>
+</nav>
+<div class="content">
+<div class="main_content">
+<div class="colum-admin">
+<script type="text/javascript">
+
+function ActiveField(Fieldname) {
+   document.getElementById(Fieldname).style.background = '#FEF1C1';
+}
+function InactiveField(Fieldname) {
+  document.getElementById(Fieldname).style.background ='#FFF'
+}
+
+</script>
+<form action="">
+
+<div class='Form-div'>
+<div class='title-insert'><div>เพิ่มไฟล์บริการ<hr/></div></div>
+
+<!-- Title -->
+<div id="titleBG" style=""><label>หัวข้อ</label><br><input type="text" name="file_title" onclick="ActiveField('titleBG');"
+onblur="InactiveField('titleBG');"></div>
+
+<!-- Note -->
+<div id="detailBG"><label> รายละเอียด</label><br><textarea rows="4" cols="50" name="file_detail" onclick="ActiveField('detailBG');"
+onblur="InactiveField('detailBG');"> 
+</textarea>
+</div>
+
+<!-- Thumbnail -->
+<div id="thumbBG"><label> รูปประกอบ (1 รูป)</label><br><input type="file" name="file_thumbnail" onclick="ActiveField('thumbBG');"
+onblur="InactiveField('thumbBG');"> 
+</textarea>
+</div>
+
+<!-- File -->
+<div id="fileBG"><label> ไฟล์ (1 ไฟล์)</label><br><input type="file" name="file_name" onclick="ActiveField('fileBG');"
+onblur="InactiveField('fileBG');"> 
+</textarea>
+</div>
+
+<div style="margin-top:10px;">
+<!--Button submit-->
+<input type="submit" id="btn-insert" class="btn-insert" onclick="this.style.display='none'; btn-reset.style.display='none';" value="บันทึก"/>
+
+<!--Button reset-->
+<input type="reset" id="btn-reset" class="btn-reset" onclick="var link = window.location.href.split('#'); customWindowOpen(link[0],'_self'); return false;" value='Reset' style="background-color:#20B2AA; padding:3px 10px" />
+</div>
+</div>
+</form>
+
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

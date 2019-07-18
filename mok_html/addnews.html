@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" media="screen" href="css/style_admin.css"/>
+<link rel="stylesheet" href="css/layerslider.css" type="text/css">
+<title>โครงการ TO BE NUMBER ONE จังหวัดชลบุรี</title>
+<meta NAME="description" CONTENT="เว็บไซต์ของโครงการ TO BE NUMBER ONE จังหวัดชลบุรี ศูนย์ประสานงานโครงการ TO BE NUMBER ONE จังหวัดชลบุรี">
+<meta name="keywords" content="TO BE NUMBER ONE, ชลบุรี, ยาเสพติด, งานส่งเสริมสุขภาพ, ศูนย์ประสานงานโครงการTO BE NUMBER ONE, แก้ไขปัญหา, บำบัด, ทูบีนัมเบอร์วัน">
+<META NAME="robots" CONTENT="index, follow">
+<META NAME="GOOGLEBOT" CONTENT="INDEX, FOLLOW">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">โครงการรณรงค์ป้องกันและแก้ปไขปัญหายาเสพติด จังหวัดชลบุรี</a></h1>
+  <h2>TO BE NUMBER ONE Chonburi</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="#" class="menu1">หน้าแรก</a></li>
+    <li><a href="#" class="menu2 active">บริการข้อมูล</a></li>
+    <li><a href="#" class="menu3">ข่าวประชาสัมพันธ์</a></li>
+    <li><a href="#" class="menu4">ระบบจัดการเอกสาร</a></li>
+    <li><a href="#" class="menu5">ปฏิทินกิจกรรม</a></li>
+    <li><a href="#" class="menu6">ติดต่อหน่วยงาน</a></li>
+  </ul>
+</nav>
+<div class="content">
+<div class="main_content">
+<div class="colum-admin">
+<script type="text/javascript">
+
+function ActiveField(Fieldname) {
+   document.getElementById(Fieldname).style.background = '#FEF1C1';
+}
+function InactiveField(Fieldname) {
+  document.getElementById(Fieldname).style.background ='#FFF'
+}
+
+</script>
+<form action="">
+
+<div class='Form-div'>
+<div class='title-insert'><div>เพิ่มข่าวประชาสัมพันธ์<hr/></div></div>
+
+<!-- Title -->
+<div id="titleBG" style=""><label>หัวข้อ</label><br><input type="text" name="info_title" onclick="ActiveField('titleBG');"
+onblur="InactiveField('titleBG');" style="width:500px;"></div>
+
+<!-- Note -->
+<div id="detailBG"><label> รายละเอียด</label><br><textarea rows="4" cols="50" name="info_detail" onclick="ActiveField('detailBG');"
+onblur="InactiveField('detailBG');"> 
+</textarea>
+</div>
+
+
+<!-- Group -->
+<div id="typeBG"><label>ประเภทข่าว</label><br><select id="info_type" name="info_type" onclick="ActiveField('typeBG');"
+onblur="InactiveField('typeBG');">
+<option value=""  >กรุณาเลือก</option>
+<option value="1"  >ข่าวอบรม / ประชุม / สัมมนา</option>
+<option value="2"  >ข่าวประชาสัมพันธ์หน่วยบ าบัดยาเสพติดภายในและนอกจังหวัด</option>
+<option value="3"  >ข่าวกิจกรรมต่างๆ</option>
+<option value="4"  >ข่าวสิทธิประโยชน์</option>
+<option value="5"  >ข่าวอื่นๆ</option>
+</select>
+</div>
+
+<!-- Images -->
+<div id="thumbBG"><label> รูปประกอบ (ถ้าต้องการเลือกหลายรูป ให้กด ctrl ค้างพร้อมเลือกรูปภาพแต่ละรูปจนเสร็จ แล้วจึงคลิก open/เปิด)</label><br><input multiple type="file" name="Info_Image" onclick="ActiveField('thumbBG');"
+onblur="InactiveField('thumbBG');"> 
+</textarea>
+</div>
+
+
+<div style="margin-top:10px;">
+<!--Button submit-->
+<input type="submit" id="btn-insert" class="btn-insert" onclick="this.style.display='none'; btn-reset.style.display='none';" value="บันทึก"/>
+
+<!--Button reset-->
+<input type="reset" id="btn-reset" class="btn-reset" onclick="var link = window.location.href.split('#'); customWindowOpen(link[0],'_self'); return false;" value='Reset' style="background-color:#20B2AA; padding:3px 10px" />
+</div>
+</div>
+</form>
+
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>
